@@ -1,0 +1,62 @@
+Foundation assessment 2 (Jesse Musenge): 
+
+Theory Q's!
+
+1.1:
+Software Development Life Cycle
+
+1.2:
+ZeroDivisionError
+
+1.3:
+git push
+
+1.4:
+NULL represents the absence of a value or an unknown value. Not to be confused with an empty string or the number zero. It represents the lack of a value altogether.
+
+1.5:
+They are responsible for facilitating and ensuring the effective execution of Scrum events and processes, also including coaching the team. Also responsible for identifying and removing any impediments that may negatively impact the team's progress
+
+1.6:
+1. Print statements: this is the simplest and most widely used debugging method. It’s used  to inspect the values of variables, verify if if-statements or for loops are behaving as expected, or identify the exact location of an error.
+
+2. ‘Pdb’ is a built-in python debugger that helps you trace the program's execution interactively. It allows you to halt the program at specific points, step through the code line by line, and examine the values of variables at different stages.
+
+1.7:
+The purpose of this function is to help you check if you have enough money to buy something based on the price and amount of cash you have. The first situation where this function could cause an error is if an invalid input is provided, such as if a non-numerical value is entered for the ‘price’ or ‘cash_given.’ To deal with this potential error, you can use exception handling with a ‘try-except’ block. Specifically, you can catch the ‘TypeError’ exception to handle the case when non-numeric values are passed as arguments. You would need to modify the function to include these. It would look like so:
+
+def can_pay(price, cash_given):
+    try:
+        if float(cash_given) >= float(price):
+            return True
+        else:
+            return False
+    except TypeError:
+        print("Invalid input error! Please enter numeric values for the price and cash_given :).")
+
+1.8:
+Git branching is a feature that allows you to create and manage multiple versions (branches) of your codebase and work on them independently from each other. Each branch is a separate line of development and can be modified without affecting the main codebase. Developers can create their own branches (versions of the code) and work on their own features or bug fixes without affecting the main/original codebase. They can choose to merge their branch back into the main codebase once they are done with their changes.
+
+To create a new branch in Git, you can use the ‘git branch’ command. Once created you can switch to this new branch using the ‘git checkout’ command. When finished making changes to the branch, you can commit the changes to the branch by using ‘git commit.’ To merge these changes to the main branch, you would use the ‘git merge’ command.
+
+Aside from allowing developers to work on different features of the codebase simultaneously, git branching is useful for experimenting with new changes to your codebase separate from the main branch. This allows you to test the changes without affecting the main codebase.
+Git branching is also useful for isolating bug fixes. This means that if you find a bug in your codebase, you can create a separate branch to fix it without affecting other changes that have been made to the main code.
+
+1.9:
+Key requirements:
+The food ordering system should allow customers to view the restaurant's menu and place orders online.
+Customers should be able to customise their orders, such as adding or removing toppings.
+The system should have a payment system.
+The system should provide real-time updates and track order status (e.g., preparing, cooking, ready for collection).
+Considerations and problems:
+The system should be user-friendly and easy to navigate for customers of all ages and disabilities
+It should be able to handle a large number of orders during peak hours (scalable)
+The system should be secure and protect customer personal and financial data (e.g., credit card information, d.o.b.). It should also protect customer data from unauthorised access and/or online theft.
+The system should integrate with existing restaurant systems (e.g.inventory management).
+
+Components or tools:
+A web application framework (such as Django) for building the front-end and back-end of the application.
+MySQL or PostgreSQL as the database management system for storing customer data, prices, order history, menu items etc.
+A payment method such as PayPal or Apple Pay to securely process online payments
+An API such AWS API Gateway for managing the API traffic and security Also to minimise downtime and errors.
+
